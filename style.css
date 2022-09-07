@@ -1,0 +1,383 @@
+@font-face {
+    font-family: 'ethnocentric';
+    src: url(./fonts/ethnocentric_Rg.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'ethnocentric', sans-serif;
+}
+
+.pavi {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+
+.logo {
+    width: 5%;
+    height: auto;
+    margin-top: 5px;
+}
+
+nav {
+    display: flex;
+    width: 85%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: orange;
+}
+
+.details {
+    margin-left: 8%;
+    margin-top: 13%;
+}
+
+.details h1 {
+    font-size: 45px;
+    color: #212121;
+    margin-bottom: 20px;
+}
+
+span {
+    color: orange;
+}
+
+.details p {
+    color: #555;
+    line-height: 22px;
+}
+
+.details a {
+    background: #212121;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+.details a:hover{
+    background: orange;
+    color: black;
+}
+
+.images {
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.images img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transform: bottom 0.5s, left 0.5s;
+}
+
+.images:hover .backimg {
+    bottom: 48px;
+}
+
+.images:hover .pavi_shakya {
+    left: 48%;
+}
+
+.heading {
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+
+.heading h1 {
+    box-shadow: 3px 5px 9px black;
+}
+
+@media only screen and (min-width:768px) and (max-width:1920px) {}
+
+
+/* .....::::::::SERVICE::::::::...... */
+
+.services-section{
+    padding: 50px 0;
+    color: #202020;
+    background-color: #fff;
+}
+
+.services-section .container{
+    max-width: 1240px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.services-section .title{
+    color: black;
+    position: relative;
+    padding-bottom: 14px;
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.services-section .title:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 140px;
+    height: 3px;
+    background-color: orange;
+    transform: translate(-50%);
+}
+
+.services-section .title:after{
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    width: 45px;
+    height: 6px;
+    background-color: orange;
+    transform: translate(-50%);
+}
+
+.services-section .discription{
+    /* letter-spacing: 1px; */
+    padding-bottom: 2rem;
+    font-size: 16px;
+    color: rgb(75, 75, 75);
+    font-family: sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+.services-section .service-column{
+    max-width: 30%;
+    padding: 0 15px;
+}
+
+.services-section .service-column .single-service{
+    position: relative;
+    margin-top: 30px;
+    background-color: white;
+    border-radius: 0;
+    padding: 40px 30px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5) ;
+    overflow: hidden;
+    text-align: center;
+}
+
+.services-section .service-column .single-service .content{
+    position: relative;
+    z-index: 20;
+}
+
+.services-section .service-column .single-service .content .icon{
+    display: inline-block;
+    margin-bottom: 25px;
+    width: 70px;
+    height: 70px;
+    background-color: orange;
+    border-radius: 5px;
+    line-height: 70px;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    transition: all 0.5s;
+}
+
+.services-section .service-column .single-service:hover .icon{
+    background-color: #fff;
+    color: orange;
+    border-radius: 50px;
+    transition: all 0.5s;
+}
+
+.services-section .service-column .single-service .content .main-title{
+    color: black;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 23px;
+    transition: color 0.3s;
+
+}
+
+.services-section .service-column .single-service:hover .main-title{
+    color: white;
+}
+
+.services-section .service-column .single-service .content .description{
+    margin-bottom: 20px;
+    /* letter-spacing: 1px; */
+    font-size: 14px;
+    font-weight: 500;
+    color: #838383;
+    transform: color 0.3s;
+}
+
+.services-section .service-column .single-service:hover .description{
+    color: orange;
+}
+
+.services-section .service-column .single-service .content .learn-more{
+    color: orange;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    font-weight: 500;
+    transition: color 0.3s;
+    margin-top: 1rem;
+}
+
+.services-section .service-column .single-service:hover .learn-more{
+    color: white;
+}
+
+.services-section .service-column .single-service .content .learn-more::after{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: orange;
+    transition: background-color 0.3s;
+}
+
+.services-section .service-column .single-service .circle-before{
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(40%, -40%);
+    width: 150px;
+    height: 150px;
+    background-color: orange;
+    border-radius: 50%;
+    transform: all 0.6s;
+}
+
+.services-section .service-column .single-service:hover .circle-before{
+    width: 100%;
+    height: 100%;
+    transform: none;
+    border: 0;
+    border-radius: 0;
+    opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+/* .....::::::::ABOUT::::::::...... */
+
+.about-us{
+    width: 100%;
+}
+
+.about-us h1{
+    text-align: center;
+    font-size: 40px;
+    color: orange;
+}
+
+
+
+/* .....::::::::CONTACT US::::::::...... */
+
+section{
+    padding: 2rem 0 0 15rem;
+}
+
+.contact{
+    height: 45%;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    grid-gap: 6rem;
+}
+
+.contact-form h1{
+    font-size: 40px;
+    margin: 1rem;
+}
+
+/* .contact-form p{
+    letter-spacing: 1px;
+    line-height: 22px;
+    margin-bottom: 1rem;
+} */
+
+.contact-form form{
+    position: relative;
+    width: 45rem;
+    /* margin-top: 2rem; */
+}
+
+.contact-form form input, 
+form textarea{
+    width: 60%;
+    padding: 17px;
+    background: rgb(237, 237, 237);
+    border: none;
+    outline: none;
+    margin-bottom: 0.7rem;
+    border-radius: 10px;
+}
+
+.contact-form textarea{
+    resize: none;
+    height: 200px;
+}
+
+.contact-form form .btn{
+    background: #212121;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 10px;
+    color: white;
+    display: inline-block;
+    margin: 20px 0;
+    border-radius: 5px;
+    width: 250px;
+    cursor: pointer;
+}
+
+.contact-form form .btn:hover{
+    background: orange;
+    color: black;
+}
